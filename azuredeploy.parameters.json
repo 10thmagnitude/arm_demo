@@ -1,0 +1,72 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "newStorageAccountName": {
+      "value": "GEN-UNIQUE"
+    },
+    "location": {
+      "value": "West US"
+    },
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminPassword": {
+      "value": "GEN-PASSWORD"
+    },
+    "adVMSize": {
+      "value": "Standard_D2"
+    },
+    "dnsPrefix": {
+      "value": "GEN-UNIQUE"
+    },
+    "publicIPAddressName": {
+      "value": "myPubIp"
+    },
+    "domainName": {
+      "value": "mydomain.local"
+    },
+    "assetLocation": {
+      "value": "https://github.com/Azure/azure-quickstart-templates/raw/master/active-directory-new-domain-ha-2-dc/"
+    },
+    "virtualNetworkAddressRange": {
+      "value": "10.4.0.0/22"
+    },
+    "dmzSubnetName": {
+      "value": "dmzSubnet"
+    },
+    "dmzSubnetRange": {
+      "value": "10.4.3.0/24"
+    },
+    "domainJoinedSubnetName": {
+      "value": "domainJoined"
+    },
+    "domainJoinedSubnetRange": {
+      "value": "10.4.2.0/24"
+    },
+    "protectedSubnetName": {
+      "value": "protected"
+    },
+    "protectedSubnetRange": {
+      "value": "10.4.1.0/24"
+    },
+    "gatewaySubnetName": {
+      "value": "gateway"
+    },
+    "gatewaySubnetRange": {
+      "value": "10.4.0.0/27"
+    },
+    "dcSubnetName": {
+      "value": "dcSubnet"
+    },
+    "dcSubnetRange": {
+      "value": "10.4.0.0/26"
+    },
+    "adminSubnetName": {
+      "value": "adminSubnet"
+    },
+    "adminSubnetRange": {
+      "value": "10.4.0.0/25"
+    }
+  }
+}
